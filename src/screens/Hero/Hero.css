@@ -1,0 +1,57 @@
+.hero-section {
+    width: 100%;
+    height: calc(100vh + 100px);
+    line-height: 0;
+    position: relative;
+    display: flex;
+
+}
+
+.hero-section .container {
+    width: 100%;
+}
+
+.hero-section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+
+}
+
+.hero-section::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgb(17, 17, 17) 0%, rgba(17, 17, 17, 0.93) 25%, rgba(17, 17, 17, 0.86) 50%, rgba(17, 17, 17, 0.5) 100%);
+    z-index: -1;
+}
+
+.hero-section .container div {
+    margin-top: -100px;
+}
+
+.hero-section h2 {
+    color: transparent;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    -webkit-text-stroke: 2px #fff;
+
+}
+
+.hero-section h2 span {
+    font-size: 3.5rem;
+    -webkit-text-stroke: 0;
+    color: var(--secondary-text);
+}
+
+.hero-section p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {}

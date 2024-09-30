@@ -1,0 +1,47 @@
+.gym-class {
+    width: 100%;
+    padding-bottom: 3rem;
+    margin-top: -100px;
+}
+
+.gym-class .container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.gym-class .card {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 3rem;
+    flex: 1;
+    border: 2px solid #fff;
+    border-radius: 1.5rem;
+}
+
+.gym-class p {
+    margin-bottom: 1rem;
+}
+
+.gym-class button {
+    background-color: #fff;
+    color: var(--primary-bg);
+}
+
+.gym-class button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .gym-class .container {
+        flex-direction: column;
+    }
+
+    .gym-class .card {
+        width: 100%;
+    }
+
+}
