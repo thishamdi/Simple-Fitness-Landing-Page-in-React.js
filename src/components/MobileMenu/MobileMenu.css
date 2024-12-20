@@ -1,0 +1,30 @@
+.mobile-menu {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 350px;
+    background-color: rgba(0, 0, 0, 0.95);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.mobile-menu ul li a {
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+
+.mobile-menu ul li a:hover {
+    color: var(--secondary-text);
+}

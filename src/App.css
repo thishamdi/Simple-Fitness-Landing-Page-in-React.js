@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
 
 :root {
-    --primary-color: #092254;
-    --secondary-color: #e57a10;
-    --primary-font: 'tajawal', sans-serif;
+    --primary-text: #343a40;
+    --secondary-text: #e31c25;
+    --primary-bg: #111;
+    --secondary-bg: #e31c25;
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Oswald', sans-serif;
 }
 
 * {
@@ -13,14 +16,79 @@
 }
 
 body {
-    direction: rtl;
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+    font-size: 1rem;
+
+    min-height: 2200px;
+    background-color: var(--primary-bg);
 }
 
 .container {
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
 }
 
 a {
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5;
+}
+
+h2,
+h4 {
+    color: #fff;
+    font-family: var(--secondary-font);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    display: inline-block;
+    font-family: var(--primary-font);
+    outline: none;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 1.5rem;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: calc(1.475rem + 2.7vw);
+    }
+
+    h4 {
+        font-size: calc(1.275rem + .3vw);
+    }
 }
