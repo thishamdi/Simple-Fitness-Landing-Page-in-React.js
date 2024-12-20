@@ -1,5 +1,11 @@
 import React from 'react';
 import "./Footer.css";
+<<<<<<< HEAD
+=======
+// import { BsTwitterX } from "react-icons/bs";
+// import { FaRegCopyright } from "react-icons/fa";
+// import { SlSocialLinkedin, SlSocialFacebook, SlSocialYoutube } from "react-icons/sl";
+>>>>>>> 8db37e35ed2a4b724e1006ed853e44cbff3b6cdb
 
 const Footer = () => {
   return (
